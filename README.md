@@ -1,3 +1,21 @@
+# Overview
+
+> ## WARNING!!!
+> This library is unfinished. I implemented it in a state that was useful for my other project and after that, I didn't finish it in the state that I planned.
+
+The `cppUtils` library is inspired by high-level languages. It provides API to a standard template library similar to what we can find in Python or JavaScript. 
+
+The second goal of the library is safety. It is almost impossible to do memory corruption using primitives from this library and, as the result, it is harder to hack the application with some malicious input.
+
+Implemented or partially implemented components:
+* **Dollar Reference** - reference counting pointer similar to `std::shared_ptr`, but lighter and with more runtime checks.
+* **Range** - class inspired by Python's `range`.
+* **Array** - `std::vector` wrapper that uses Dollar Reference, does more runtime checks, and supports `Range`.
+* **String** - `std::string` wrapper similar to `Array` with `RegEx` support.
+
+Planned components:
+* **Dict** - `std::map` wrapper similar to Python's `dict`
+
 # Dollar Reference
 
 Special kind of reference that makes code more secure by:
